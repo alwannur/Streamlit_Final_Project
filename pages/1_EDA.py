@@ -6,7 +6,7 @@ import country_converter as coco
 
 import folium
 import branca.colormap as cm
-from streamlit_folium import folium_static
+#from streamlit_folium import folium_static
 import plotly.express as px
 
 st.title('Exploring Data')
