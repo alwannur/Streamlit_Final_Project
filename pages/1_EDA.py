@@ -66,7 +66,7 @@ Day_Revenue = df.groupby('Day').agg({'Day_Name': 'first', 'Revenue': 'sum', 'Tra
 Day_Revenue = Day_Revenue.sort_values('Day', ascending = True)
 
 st.subheader('Sales Trend Transaction')
-@st.cache_data
+# @st.cache_data
 def sales_trend():
     tab1, tab2 = st.tabs(["Sales Trend Over The Month", "Sales Trend Over The Day"])
     with tab1:
@@ -90,7 +90,7 @@ country_sales['Country'] = [coco.convert(i, to = 'name_short') for i in country_
 # revenue
 Country_rev = country_sales.sort_values('Revenue', ascending=False).head(10)
 
-@st.cache_data
+# @st.cache_data
 def country():
     tab1, tab2 = st.tabs(["Top 10", "Revenue Distribution"])
     with tab1:
