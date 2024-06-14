@@ -16,7 +16,7 @@ st.markdown(
     """
 )
 
-df = pd.read_csv('dataset/rfm_modified.csv')
+df = pd.read_csv('rfm_modified.csv')
 
 @st.cache_data
 def show_data_RFM():
