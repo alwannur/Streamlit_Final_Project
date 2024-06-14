@@ -1,0 +1,8 @@
+pandas
+streamlit
+numpy
+country-converter
+scikit-learn
+plotly
+folium
+branca
