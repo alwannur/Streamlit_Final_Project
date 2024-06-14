@@ -1,5 +1,5 @@
 pandas
-streamlit == 1.31.1
+streamlit 
 numpy
 country-converter
 scikit-learn
