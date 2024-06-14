@@ -18,7 +18,7 @@ st.markdown(
 
 df = pd.read_csv('rfm_modified.csv')
 
-@st.cache_data
+# @st.cache_data
 def show_data_RFM():
     st.write(df)
 if st.checkbox('Show Data RFM!'):
@@ -45,7 +45,7 @@ custom_color_map = {
 }
 
 rfm_select = st.selectbox('Select cluster:', ['All', 'Cluster 0','Cluster 1','Cluster 2','Cluster 3'])
-@st.cache_data
+# @st.cache_data
 def visualize_rfm(rfm_select):
 
     if rfm_select == 'All':
@@ -87,7 +87,7 @@ cluster_count.columns = ['Cluster', 'percentage']
 cluster_count['percentage'] *= 100
 
 st.subheader('Cluster Distribution Percentage(%)')
-@st.cache_data
+# @st.cache_data
 def rfm_percentage():
     fig = px.bar(cluster_count, x='Cluster', y='percentage',
              text=cluster_count['percentage'].apply(lambda x: f'{x:.2f} %'),
