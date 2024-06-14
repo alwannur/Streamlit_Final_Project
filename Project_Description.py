@@ -21,7 +21,7 @@ st.markdown(
 """
 )
 
-df = pd.read_csv('dataset\Sales Transaction v.4a.csv')
+df = pd.read_csv('Sales Transaction v.4a.csv')
 
 st.markdown("## Description of Dataset")
 @st.cache_data
