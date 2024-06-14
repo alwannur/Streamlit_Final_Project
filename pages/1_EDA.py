@@ -34,7 +34,7 @@ df = pd.read_csv('cleaned_dataset_real.csv')
 prod_rev = df.groupby('ProductNo').agg({'ProductName': 'first', 'Revenue': 'sum',  'Quantity': 'sum'}).reset_index()
 st.subheader('Product Revenue')
 sort_order = st.selectbox('Select Sorting Order:', ['Highest to Lowest', 'Lowest to Highest'])
-@st.cache_data()
+# @st.cache_data()
 def prod_revenue(sort_order):
     if sort_order == 'Highest to Lowest':
         sorted_revenue = prod_rev.sort_values(by='Revenue', ascending=False).head(10)
