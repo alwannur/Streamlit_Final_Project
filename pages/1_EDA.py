@@ -21,7 +21,7 @@ st.markdown(
     """
 )
 
-df = pd.read_csv('dataset/cleaned_dataset_real.csv')
+df = pd.read_csv('cleaned_dataset_real.csv')
 
 # @st.cache_data
 # def show_data_EDA():
