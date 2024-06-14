@@ -24,7 +24,7 @@ st.markdown(
 df = pd.read_csv('Sales Transaction v.4a.csv')
 
 st.markdown("## Description of Dataset")
-@st.cache_data
+# @st.cache_data
 def show_dataset():
     st.write(df)
 if st.checkbox('Show Data!'):
