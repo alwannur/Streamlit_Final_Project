@@ -8,3 +8,5 @@ folium
 branca
 datetime
 pandas-datareader
+pip 
+pypi
