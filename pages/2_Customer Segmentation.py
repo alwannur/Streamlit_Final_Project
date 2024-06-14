@@ -5,7 +5,7 @@ import time
 
 import folium
 import branca.colormap as cm
-from streamlit_folium import folium_static
+# from streamlit_folium import folium_static
 import plotly.express as px
 # st.set_page_config(layout="wide")
 st.title('Customer Segmentation')
